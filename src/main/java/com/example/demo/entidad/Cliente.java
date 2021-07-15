@@ -29,25 +29,20 @@ public class Cliente implements Serializable{
 
 	@Column(name = "CLIENTE_ACTIVO")
 	private Character clienteActivo;
-
-	public Cliente() {
-
-	}
+	
+	
+	
 
 	public Cliente(ClientePK clientepk, String nombre, String apellidos, Character clienteActivo) {
-
+		super();
 		this.clientepk = clientepk;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.clienteActivo = clienteActivo;
 	}
 
-	public int hashCode() {
-		return clientepk.hashCode();
-	}
-
-	public boolean equals(Object obj) {
-		return clientepk.equals(obj);
+	public Cliente() {
+		super();
 	}
 
 	public ClientePK getClientepk() {
@@ -81,5 +76,16 @@ public class Cliente implements Serializable{
 	public void setClienteActivo(Character clienteActivo) {
 		this.clienteActivo = clienteActivo;
 	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	
+	
+
+	
+
+
 
 }
