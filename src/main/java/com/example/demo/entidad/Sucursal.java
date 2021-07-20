@@ -19,8 +19,8 @@ public class Sucursal {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID_SUCURSAL")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idSucursal;
 	@Column(name = "NOMBRE")
 	private String nombre;
