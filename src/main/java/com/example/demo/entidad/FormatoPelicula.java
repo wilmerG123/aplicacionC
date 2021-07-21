@@ -17,6 +17,9 @@ public class FormatoPelicula {
 	private Long ideFormatoPelicula;
 	@Column(name="NOM_FORMATO_PELICULA")
 	private String nomFormatoPelicula;
+	
+	
+	
 	public Long getIdeFormatoPelicula() {
 		return ideFormatoPelicula;
 	}
